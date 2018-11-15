@@ -6,11 +6,11 @@ phases:
     install:
         commands:
             - echo Installing source NPM dependencies...
-            - cd project1fork/project1-ers-jdula && npm install
+            - npm install
     build:
         commands:
             - echo Build started on `date`
-            - cd project1fork/project1-ers-jdula && npm run build
+            -  npm run build
     post_build:
         commands:
             - echo "$CODEBUILD_BUILD_SUCCEEDING"
